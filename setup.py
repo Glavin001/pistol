@@ -1,16 +1,21 @@
 __author__='Dawson Reid'
 
-setup(
+import setuptools
+
+f = open('README.md', 'r')
+README = f.read()
+f.close()
+
+setuptools.setup(
   name='pistol',
   version='0.0.001',
-  description='''
-  ''',
-  packages=None,
-
+  long_description=README,
+  packages=[
+    'pistol'
+  ],
   package_data={
   },
-  install_requires=required_packages,
-  test_require=['pytest'],
+  install_requires=None,
   cmdclass={
   }
 )
