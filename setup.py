@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 __author__='Dawson Reid'
 
 import setuptools
@@ -7,15 +8,16 @@ README = f.read()
 f.close()
 
 setuptools.setup(
-  name='pistol',
-  version='0.0.001',
-  long_description=README,
-  packages=[
-    'pistol'
-  ],
-  package_data={
-  },
-  install_requires=None,
-  cmdclass={
-  }
+    name='pistol',
+    version='0.0.001',
+    long_description=README,
+    packages=[
+        'pistol'
+    ],
+    package_data={
+        
+    },
+    install_requires=None,
+    cmdclass={
+    }
 )
